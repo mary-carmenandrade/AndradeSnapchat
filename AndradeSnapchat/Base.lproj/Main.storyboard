@@ -62,11 +62,20 @@
                                     <action selector="iniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPM-Kc-DjE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tgi-8m-S8O">
+                                <rect key="frame" x="150.5" y="495" width="113" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Iniciar Google"/>
+                                <connections>
+                                    <action selector="iniciargoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCM-Q8-A5m"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                         <constraints>
                             <constraint firstItem="lPu-um-QLx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Qu-8b-Csd"/>
+                            <constraint firstItem="Tgi-8m-S8O" firstAttribute="top" secondItem="ENk-yp-YZA" secondAttribute="bottom" constant="49" id="54s-ou-oOQ"/>
                             <constraint firstItem="J9p-TU-87d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="CBv-WF-Y4Q"/>
                             <constraint firstItem="J9p-TU-87d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DoM-2D-Zx6"/>
                             <constraint firstItem="J9p-TU-87d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="GZs-gj-fQq"/>
@@ -79,6 +88,7 @@
                             <constraint firstItem="hDz-Ib-qgd" firstAttribute="top" secondItem="Pxs-Fq-1Ks" secondAttribute="bottom" constant="25" id="ZBX-ry-lnE"/>
                             <constraint firstItem="lPu-um-QLx" firstAttribute="top" secondItem="J9p-TU-87d" secondAttribute="bottom" constant="25" id="dph-Tx-XeC"/>
                             <constraint firstItem="eex-8D-cIv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="geN-C1-ElG"/>
+                            <constraint firstItem="Tgi-8m-S8O" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iaF-lU-l8O"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J9p-TU-87d" secondAttribute="trailing" constant="150" id="yDZ-nD-kVm"/>
                         </constraints>
                     </view>
@@ -88,6 +98,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="x0Z-Wl-e1Z">
+                    <rect key="frame" x="0.0" y="0.0" width="67" height="31"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                </button>
             </objects>
             <point key="canvasLocation" x="-23" y="98"/>
         </scene>
