@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		64B172B42B08FBC900C2468B /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B172B32B08FBC900C2468B /* Usuario.swift */; };
+		64B172B62B09128400C2468B /* RegistrarseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B172B52B09128400C2468B /* RegistrarseViewController.swift */; };
+		64D942D42B041B140081C86B /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D942D32B041B140081C86B /* SnapsViewController.swift */; };
+		64D942D62B04211A0081C86B /* ImagenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D942D52B04211A0081C86B /* ImagenViewController.swift */; };
+		64D942D92B042AC90081C86B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 64D942D82B042AC90081C86B /* FirebaseDatabase */; };
+		64D942DB2B042AD40081C86B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 64D942DA2B042AD40081C86B /* FirebaseStorage */; };
+		64D942DF2B0436390081C86B /* ElegirUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D942DE2B0436390081C86B /* ElegirUsuarioViewController.swift */; };
 		64DB5EC72AFADB6000F39D49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB5EC62AFADB6000F39D49 /* AppDelegate.swift */; };
 		64DB5EC92AFADB6000F39D49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB5EC82AFADB6000F39D49 /* SceneDelegate.swift */; };
 		64DB5ECB2AFADB6000F39D49 /* iniciarSesionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64DB5ECA2AFADB6000F39D49 /* iniciarSesionViewController.swift */; };
@@ -22,6 +29,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		64B172B32B08FBC900C2468B /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		64B172B52B09128400C2468B /* RegistrarseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarseViewController.swift; sourceTree = "<group>"; };
+		64D942D32B041B140081C86B /* SnapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		64D942D52B04211A0081C86B /* ImagenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagenViewController.swift; sourceTree = "<group>"; };
+		64D942DE2B0436390081C86B /* ElegirUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElegirUsuarioViewController.swift; sourceTree = "<group>"; };
 		64DB5EC32AFADB6000F39D49 /* AndradeSnapchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndradeSnapchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64DB5EC62AFADB6000F39D49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64DB5EC82AFADB6000F39D49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,9 +50,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D942D92B042AC90081C86B /* FirebaseDatabase in Frameworks */,
 				64DB5EE92AFAF8FA00F39D49 /* GoogleSignInSwift in Frameworks */,
 				64DB5EDE2AFAE6FF00F39D49 /* FirebaseAnalytics in Frameworks */,
 				64DB5EE72AFAF8FA00F39D49 /* GoogleSignIn in Frameworks */,
+				64D942DB2B042AD40081C86B /* FirebaseStorage in Frameworks */,
 				64DB5EE22AFAE6FF00F39D49 /* FirebaseAuth in Frameworks */,
 				64DB5EE02AFAE6FF00F39D49 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
@@ -49,11 +63,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64B172B12B08FB5E00C2468B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				64D942DE2B0436390081C86B /* ElegirUsuarioViewController.swift */,
+				64DB5ECA2AFADB6000F39D49 /* iniciarSesionViewController.swift */,
+				64D942D52B04211A0081C86B /* ImagenViewController.swift */,
+				64D942D32B041B140081C86B /* SnapsViewController.swift */,
+				64B172B52B09128400C2468B /* RegistrarseViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		64B172B22B08FBA200C2468B /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				64B172B32B08FBC900C2468B /* Usuario.swift */,
+			);
+			path = Modelos;
+			sourceTree = "<group>";
+		};
+		64D942D72B042AC90081C86B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		64DB5EBA2AFADB6000F39D49 = {
 			isa = PBXGroup;
 			children = (
 				64DB5EC52AFADB6000F39D49 /* AndradeSnapchat */,
 				64DB5EC42AFADB6000F39D49 /* Products */,
+				64D942D72B042AC90081C86B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +110,10 @@
 		64DB5EC52AFADB6000F39D49 /* AndradeSnapchat */ = {
 			isa = PBXGroup;
 			children = (
+				64B172B22B08FBA200C2468B /* Modelos */,
+				64B172B12B08FB5E00C2468B /* ViewControllers */,
 				64DB5EC62AFADB6000F39D49 /* AppDelegate.swift */,
 				64DB5EC82AFADB6000F39D49 /* SceneDelegate.swift */,
-				64DB5ECA2AFADB6000F39D49 /* iniciarSesionViewController.swift */,
 				64DB5ECC2AFADB6000F39D49 /* Main.storyboard */,
 				64DB5ECF2AFADB6400F39D49 /* Assets.xcassets */,
 				64DB5ED12AFADB6400F39D49 /* LaunchScreen.storyboard */,
@@ -102,6 +145,8 @@
 				64DB5EE12AFAE6FF00F39D49 /* FirebaseAuth */,
 				64DB5EE62AFAF8FA00F39D49 /* GoogleSignIn */,
 				64DB5EE82AFAF8FA00F39D49 /* GoogleSignInSwift */,
+				64D942D82B042AC90081C86B /* FirebaseDatabase */,
+				64D942DA2B042AD40081C86B /* FirebaseStorage */,
 			);
 			productName = AndradeSnapchat;
 			productReference = 64DB5EC32AFADB6000F39D49 /* AndradeSnapchat.app */;
@@ -163,9 +208,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64D942D42B041B140081C86B /* SnapsViewController.swift in Sources */,
+				64D942D62B04211A0081C86B /* ImagenViewController.swift in Sources */,
+				64B172B42B08FBC900C2468B /* Usuario.swift in Sources */,
 				64DB5ECB2AFADB6000F39D49 /* iniciarSesionViewController.swift in Sources */,
+				64B172B62B09128400C2468B /* RegistrarseViewController.swift in Sources */,
 				64DB5EC72AFADB6000F39D49 /* AppDelegate.swift in Sources */,
 				64DB5EC92AFADB6000F39D49 /* SceneDelegate.swift in Sources */,
+				64D942DF2B0436390081C86B /* ElegirUsuarioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +452,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		64D942D82B042AC90081C86B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64DB5EDC2AFAE6FF00F39D49 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		64D942DA2B042AD40081C86B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64DB5EDC2AFAE6FF00F39D49 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
 		64DB5EDD2AFAE6FF00F39D49 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 64DB5EDC2AFAE6FF00F39D49 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
