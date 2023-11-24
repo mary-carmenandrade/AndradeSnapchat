@@ -206,15 +206,81 @@
             </objects>
             <point key="canvasLocation" x="-23" y="855"/>
         </scene>
+        <!--Ver Snap View Controller-->
+        <scene sceneID="ACD-IG-V9R">
+            <objects>
+                <viewController id="svq-QA-Zne" customClass="VerSnapViewController" customModule="AndradeSnapchat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R45-HH-hha">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensaje:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4l-BH-4i9">
+                                <rect key="frame" x="10" y="76" width="89.5" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imagen Enviada:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBr-f9-KYu">
+                                <rect key="frame" x="10" y="133.5" width="163" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="58R-77-GIs">
+                                <rect key="frame" x="20" y="204" width="374" height="241"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HoF-db-mjh">
+                                <rect key="frame" x="132" y="481" width="128" height="31"/>
+                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reprodcir Audio">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xDr-PI-6iw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="J4l-BH-4i9" firstAttribute="leading" secondItem="xDr-PI-6iw" secondAttribute="leading" constant="10" id="FLY-6g-Pgl"/>
+                            <constraint firstItem="mBr-f9-KYu" firstAttribute="top" secondItem="J4l-BH-4i9" secondAttribute="bottom" constant="30" id="GlD-Oq-n8H"/>
+                            <constraint firstItem="58R-77-GIs" firstAttribute="width" secondItem="HoF-db-mjh" secondAttribute="width" id="Jqq-IJ-cLO"/>
+                            <constraint firstItem="J4l-BH-4i9" firstAttribute="top" secondItem="xDr-PI-6iw" secondAttribute="top" constant="20" id="ljZ-9p-xrj"/>
+                            <constraint firstItem="mBr-f9-KYu" firstAttribute="leading" secondItem="xDr-PI-6iw" secondAttribute="leading" constant="10" id="nMx-5l-aYH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Fak-Ql-td4"/>
+                    <connections>
+                        <outlet property="btnAudio" destination="HoF-db-mjh" id="qxI-bL-w7D"/>
+                        <outlet property="imagenView" destination="58R-77-GIs" id="Psu-3s-NxX"/>
+                        <outlet property="lblMensaje" destination="J4l-BH-4i9" id="qWd-qT-TAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxa-62-aPL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1398.5507246376812" y="823.66071428571422"/>
+        </scene>
         <!--Snaps View Controller-->
         <scene sceneID="PFw-mp-FqV">
             <objects>
-                <viewController id="rFQ-A7-wM0" customClass="SnapsViewController" customModule="AndradeSnapchat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="rFQ-A7-wM0" customClass="SnapsViewController" customModule="AndradeSnapchat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jzQ-Gy-u12">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="As4-fm-U5N">
+                                <rect key="frame" x="0.0" y="56" width="414" height="786"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="iax-aS-PLZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iax-aS-PLZ" firstAttribute="trailing" secondItem="As4-fm-U5N" secondAttribute="trailing" id="AhU-VJ-VRV"/>
+                            <constraint firstItem="iax-aS-PLZ" firstAttribute="bottom" secondItem="As4-fm-U5N" secondAttribute="bottom" id="KBX-3D-wnZ"/>
+                            <constraint firstItem="As4-fm-U5N" firstAttribute="leading" secondItem="iax-aS-PLZ" secondAttribute="leading" id="jg8-mt-aih"/>
+                            <constraint firstItem="As4-fm-U5N" firstAttribute="top" secondItem="iax-aS-PLZ" secondAttribute="top" id="ktO-bu-wSg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="EX5-DR-Xq6">
                         <barButtonItem key="leftBarButtonItem" title="Cerrar Sesión" id="6Cj-Ch-xMz">
@@ -228,6 +294,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tablaSnaps" destination="As4-fm-U5N" id="gaI-bN-4L8"/>
+                        <segue destination="svq-QA-Zne" kind="show" identifier="versnapsegue" id="yQ0-41-WeB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJ9-sW-2Ih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,7 +325,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezV-Za-oRd">
-                                <rect key="frame" x="87" y="273" width="240" height="35.5"/>
+                                <rect key="frame" x="87" y="328.5" width="240" height="35.5"/>
                                 <color key="backgroundColor" systemColor="labelColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -266,18 +336,33 @@
                                     <action selector="elegirContactoTapped:" destination="w0r-GM-Z9B" eventType="touchUpInside" id="qsq-54-h8L"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6M-vx-1Mi">
+                                <rect key="frame" x="87" y="273" width="240" height="35.5"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Grabar">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="grabarTapped:" destination="w0r-GM-Z9B" eventType="touchUpInside" id="sxh-uo-apB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Pmy-KF-eC7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Jvb-5v-vN4" firstAttribute="width" secondItem="d6M-vx-1Mi" secondAttribute="width" id="4Eb-L9-y9h"/>
                             <constraint firstItem="Jvb-5v-vN4" firstAttribute="centerX" secondItem="Odi-wg-uWG" secondAttribute="centerX" id="BO2-W8-dHL"/>
+                            <constraint firstItem="d6M-vx-1Mi" firstAttribute="centerX" secondItem="Odi-wg-uWG" secondAttribute="centerX" id="MD2-Xa-cFs"/>
                             <constraint firstItem="ezV-Za-oRd" firstAttribute="centerX" secondItem="Odi-wg-uWG" secondAttribute="centerX" id="ONX-U6-4US"/>
                             <constraint firstItem="Jvb-5v-vN4" firstAttribute="top" secondItem="93f-lt-zXe" secondAttribute="bottom" constant="15" id="Rtb-p2-9X7"/>
+                            <constraint firstItem="d6M-vx-1Mi" firstAttribute="top" secondItem="Jvb-5v-vN4" secondAttribute="bottom" constant="20" id="YUQ-eY-ZIp"/>
                             <constraint firstItem="Jvb-5v-vN4" firstAttribute="width" secondItem="93f-lt-zXe" secondAttribute="width" id="Yo1-iB-PJV"/>
                             <constraint firstItem="ezV-Za-oRd" firstAttribute="width" secondItem="Jvb-5v-vN4" secondAttribute="width" id="mHR-zB-8BY"/>
                             <constraint firstItem="93f-lt-zXe" firstAttribute="top" secondItem="Pmy-KF-eC7" secondAttribute="top" constant="20" id="my8-HZ-6lm"/>
                             <constraint firstItem="93f-lt-zXe" firstAttribute="centerX" secondItem="Odi-wg-uWG" secondAttribute="centerX" id="wHi-Ae-Rnc"/>
-                            <constraint firstItem="ezV-Za-oRd" firstAttribute="top" secondItem="Jvb-5v-vN4" secondAttribute="bottom" constant="20" id="wU7-Np-73A"/>
+                            <constraint firstItem="ezV-Za-oRd" firstAttribute="top" secondItem="d6M-vx-1Mi" secondAttribute="bottom" constant="20" id="zxO-Vn-tpr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Enviar Mensaje" id="qgW-us-N5C">
@@ -363,8 +448,14 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
