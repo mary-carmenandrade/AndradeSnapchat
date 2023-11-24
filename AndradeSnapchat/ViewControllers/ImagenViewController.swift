@@ -110,11 +110,12 @@ class ImagenViewController: UIViewController, UIImagePickerControllerDelegate, U
             audioRecorder?.delegate = self
             audioRecorder?.record()
             isRecording = true
-            grabarButton.setTitle("Detener Grabación", for: .normal)
+            grabarButton.setTitle("Detener Grabación", for: .normal) // Aquí se establece el título
         } catch {
             print("Error al iniciar la grabación: \(error)")
         }
     }
+
     
     func stopRecording() {
             audioRecorder?.stop()
